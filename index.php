@@ -4,7 +4,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="Style/style.css">
   <script type="" src="Commands/modal.js"></script>
-  <title>Sistema de Loginnn</title>
+  <title>Sistema de Loginn</title>
 </head>
 
 <body>
