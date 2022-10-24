@@ -39,12 +39,12 @@
 
           <span onclick="hideModal()" class="btn-closed-modal">&times;</span>
 
-          <form class="form-modal">
+          <form action="registrar.php" method="post" class="form-modal">
             <h1>Preencha seus dados</h1>
             <input type="text" name="nome" placeholder="Nome">
             <input type="email" name="email" placeholder="Email">
             <input type="password" name="senha" placeholder="Senha">
-            <input type="submit" name="acao" value="Cadastrar">
+            <input type="submit" name="registrar" value="Cadastrar">
            </form>
 
           </div>
@@ -53,8 +53,3 @@
 </div>
 </body>
 </html>
-
-<?php
-    include('config.php');
-    Mysql::login;
-?>
