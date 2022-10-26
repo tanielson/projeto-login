@@ -9,7 +9,7 @@
 
   $resulta=mysqli_query($conexao,$comando);
   
-  header("Location:index.php");
+  header("location:index.php");
 
 
   ?>
