@@ -1,3 +1,6 @@
+<!DOCTYPE html>
+<html>
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +11,7 @@
 </head>
 
 <body>
+
 <div class="main-login">
 
      <div class="left-login">
@@ -39,12 +43,12 @@
 
           <span onclick="hideModal()" class="btn-closed-modal">&times;</span>
 
-          <form action="registrar.php" method="post" class="form-modal">
+          <form method="post" action="registrar.php" class="form-modal">
             <h1>Preencha seus dados</h1>
             <input type="text" name="nome" placeholder="Nome">
             <input type="email" name="email" placeholder="Email">
             <input type="password" name="senha" placeholder="Senha">
-            <input type="submit" name="registrar" value="Cadastrar">
+            <input type="submit" value="Cadastrar">
            </form>
 
           </div>

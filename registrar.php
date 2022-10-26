@@ -1,19 +1,15 @@
 <?php
-  include('conexao.php');
+  include 'conexao.php';
 
   $nome=$_POST['nome'];
   $email=$_POST['email'];
   $senha=$_POST['senha'];
 
-  $comando="INSERT INTO login(nome,email,senha) values ('$nome','$email','$senha')";
-  $resulta=mysqli_query("$conexao,$comando)";
+  $comando="INSERT INTO aspire VALUE (NULL,'$nome','$email','$senha')";
 
-  if($resulta!=0)
-  {
-    echo "<script>alert('Foi cadastrado com sucesso')</script>";
-    header("Location:indexx.php");
-  }
-  else
-  {
-    echo "<script>history.go(-1);alert('Não foi cadastrado')</script>";
-  }
+  $resulta=mysqli_query($conexao,$comando);
+  
+  header("Location:index.php");
+
+
+  ?>
