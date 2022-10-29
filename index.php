@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="Style/style.css">
   <script type="" src="Commands/modal.js"></script>
-  <title>Sistema de Login</title>
+  <title>Lead System</title>
 </head>
 
 <body>
@@ -15,26 +15,23 @@
 <div class="main-login">
 
      <div class="left-login">
-      <h1>Faça Login<br>E entre no sistema de relatório!</h1>
+      <h1>Registre-se<br>E acesse o seu painel administrativo!</h1>
       <img src="Imagens/img.svg" class="left-login-image" alt="Img Relatório">
      </div>
 
 <div class="right-login">
   
   <div class="card-login">
-    
       <h1>LOGIN</h1>
-
-      <div class="textfield">
+      <div action="enter.php" method="post" class="textfield">
           <label for="usuario">Email</label>
           <input type="email" name="usuario" placeholder="Email" maxlength="40">
       </div>
-
-      <div class="textfield">
+      <div action="enter.php" method="post" class="textfield">
          <label for="senha">Senha</label>
-         <input type="password" name="senha" placeholder="Senha" maxlength="32">
+         <input type="senha" name="senha" placeholder="Senha" maxlength="32">
       </div>
-         <button class="btn-login">Login</button>
+         <button action="enter.php" method="post" type="submit" class="btn-login">Login</button>
          <button onclick="showModal()" class="btn-register">Não tenho conta</button>
     </div>
 

@@ -5,7 +5,7 @@
   $email=$_POST['email'];
   $senha=$_POST['senha'];
 
-  $comando="INSERT INTO aspire VALUE (NULL,'$nome','$email','$senha')";
+  $comando="INSERT INTO aspire VALUE (NULL,'$nome','$email',md5('".$senha."'))";
 
   $resulta=mysqli_query($conexao,$comando);
   
